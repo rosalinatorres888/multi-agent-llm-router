@@ -7,7 +7,7 @@ Author: Rosalina Torres
 import os
 import time
 import logging
-from typing import Optional
+from typing import Optional, Dict
 from dataclasses import dataclass
 from enum import Enum
 

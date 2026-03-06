@@ -7,9 +7,13 @@
 
 # Multi-Agent LLM Router
 
-> 🤖 **Intelligent API routing system with complexity-based fallback logic, reducing LLM costs by 90% while maintaining performance**
+> 🤖 **Intelligent routing system that dynamically selects between local and cloud-hosted LLMs based on query complexity — achieving 90% cost reduction through local-first architecture with cloud fallback.**
 
-Production-grade agent orchestration system that intelligently routes queries between local LLMs (Ollama/Llama 3) and cloud APIs (Gemini Pro) based on query complexity analysis. Implements cost optimization through local-first routing with automatic fallback mechanisms.
+Production-grade agent orchestration system routing queries between local LLMs (Ollama/Llama 3) and cloud APIs (Gemini Pro) based on real-time complexity analysis.
+
+**The core safety-relevant insight this project generated:** routing decisions are policy decisions. Choosing which model handles which task — based on complexity thresholds, confidence scores, and cost constraints — is structurally similar to the problem of deciding when to escalate AI decisions to human oversight. This project deepened my thinking about where autonomy should and should not be granted in multi-model systems, and what it means to fail gracefully when a model operates outside its competence boundary.
+
+**Relevant to:** Scalable oversight, human-AI decision boundaries, deployment policy, fallback safety mechanisms.
 
 **Key Features:**
 - ⚡ **Intelligent routing** based on real-time complexity analysis
